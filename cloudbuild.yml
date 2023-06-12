@@ -11,3 +11,8 @@ steps:
           export SNYK_TOKEN
           mvn snyk:test -fn 
     id: Snyk SCA
+artifacts:
+  objects:
+    location: 'gs://sushil-snyk-scan'
+    paths:
+      - sushil-results.html
