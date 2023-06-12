@@ -1,5 +1,5 @@
 steps:   
-  #Run Software Composition Analysis (SCA security scan) using Snyk
+  #Run Software Composition Analysis  (SCA security scan)  using Snyk
   - name: 'ubuntu'
     entrypoint: bash
     args: 
