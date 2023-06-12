@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.example</groupId>
-    <artifactId>java-vulnerable-code-asecurityguru</artifactId>
+    <artifactId>java-vulnerable-code-sushil-ohol</artifactId>
     <version>1.0-SNAPSHOT</version>
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -25,7 +25,7 @@
 	<build>
 	<plugins>
 <!--# Changes for Software Composition Analysis Scan using Snyk
-#By ASecurityGuru
+#By Sushil Ohol
 #5/12/2022 11:14 AM IST
 -->
     <plugin>
@@ -34,7 +34,7 @@
       <version>2.0.0</version>
       <inherited>false</inherited>
       <configuration>
-        <org>asecurityguru</org>
+        <org>sushil-snyk-personel-organization</org>
       </configuration>
     </plugin>
    </plugins>
