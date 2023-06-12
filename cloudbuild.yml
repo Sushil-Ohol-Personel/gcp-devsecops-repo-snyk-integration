@@ -13,8 +13,17 @@ steps:
           snyk test --severity-threshold=medium --json | snyk-to-html -o results.html || true
 
     id: Snyk SCA
+  - name: snyk/snyk-cli:npm
+    args:
+      - '-c'
+      - |-
+        snyk config set api=${_SNYK_TOKEN}
+        set -o pipefail
+        snyk test --severity-threshold=medium --json | snyk-to-html -o results.html || true
+    id: Create HTML artifact
+    entrypoint: bash
 artifacts:
   objects:
     location: 'gs://sushil-snyk-scan'
     paths:
-      - sushil-results.html
+      - results.html
