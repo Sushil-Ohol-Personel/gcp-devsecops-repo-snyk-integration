@@ -10,6 +10,8 @@ steps:
           SNYK_TOKEN=${_SNYK_TOKEN}
           export SNYK_TOKEN
           mvn snyk:test -fn 
+          snyk test --severity-threshold=medium --json | snyk-to-html -o results.html || true
+
     id: Snyk SCA
 artifacts:
   objects:
